@@ -1,0 +1,15 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "description": "interaction between node and postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "cynthia-kam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.10.0"
+  }
+}
