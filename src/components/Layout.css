@@ -1,0 +1,47 @@
+.layout-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+  }
+  
+  .navbar {
+    grid-area: 1/1/span 1/span 2;
+    background-color: #d31f8e;
+    color: #fff;
+    height: 10vh;
+  }
+  
+  .sidebar {
+    grid-area: 2 / 1/span 1/ span 1;
+    background-color: #dedede;
+    border-right: 1px solid #ccc;
+    width: 200px;
+    height:200vh; /* add this line to set the height to 100% of viewport height */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    background-color: #d31f8e;
+    color: #fff;
+  }
+  
+  .main-content {
+   grid-area: 2/2/span 1/span 1;
+  }

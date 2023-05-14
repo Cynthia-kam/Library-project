@@ -25,8 +25,8 @@ form {
   input:focus,
   textarea:focus {
     outline: none;
-    border-color: #0077cc;
-    box-shadow: 0px 0px 5px #0077cc;
+    border-color: #7fe7b8;
+    box-shadow: 0px 0px 5px #7fe7b8;
   }
   
   button {
@@ -40,6 +40,9 @@ form {
     transition: background-color 0.2s ease-in-out;
   }
   
-  button:hover {
-    background-color: #005c99;
+  .error{
+    color: red;
+  }
+  .success{
+    color:rgb(35, 177, 137)
   }

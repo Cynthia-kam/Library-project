@@ -10,7 +10,7 @@ const pool = new Pool({
 //getbooks
 const getBooks = () => {
     return new Promise(function(resolve, reject) {
-      pool.query('SELECT * FROM books', (error, results) => {
+      pool.query('SELECT * FROM Books', (error, results) => {
         if (error) {
           reject(error)
         }

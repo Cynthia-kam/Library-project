@@ -1,38 +1,99 @@
+.book-container {
+  display: grid;
+ 
+}
+
 .book-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* centers horizontally */
-    align-items: center; /* centers vertically */
-   
-  }
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 10px;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70vw;
+}
+.book-details{
+  grid-area: 1/ 1/ span 1/span 1;
+ 
+}
+.button-group{
+  grid-area: 2/ 1/ span 1/span 1;
+ 
+}
+.book-image{
+  grid-area: 1/ 2/ span 2/span 1;
+ 
+}
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.button-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.update-button {
+  background-color: #d31f8e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #d31f8e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.book-image>img{
+  width: 100%;
+  height: 180px;
+}
+.book-image{
+  text-align: right;
+}
+.input-control.error input{
+  border-color: #ff3860;
+ 
+}
+.input-control.success input{
+  border-color: #09c372;
+}
+.input-control.error{
+  color: #ff3860;
+  font-size: 12px;
   
-  .book-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .book-card li {
-    background-color: #f7f7f7;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    border:4px solid #d31f8e;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    background-color: #f2f2f2; /* sets the background color */
-    display: inline-block; /* displays cards horizontally */
-  }
-  
-  .book-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #333; 
-  }
-  
-  .book-card p {
-    font-size: 1rem;
-    margin: 0;
-    color: #666; 
-  }
-  
+}
+
+.input-control input:focus{
+  outline: 0;
+}
+.input-control label{
+  float: left;
+ 
+}
+#error{
+  text-align: center;
+}
